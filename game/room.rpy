@@ -305,6 +305,16 @@ label picture_inspect:
     
     play sound "ting.ogg"
 
+    scene apartment normal_blurred with dissolve
+
+
+    image picture = "Props/picture/PICTURE FRAME PHOTO.png"
+
+    show picture at truecenter with moveinbottom
+
+
+    
+
     if not picture_inspected:
         pov "Hey, that's a picture of us! We'd just graduated, I remember how exciting it was."
         
@@ -324,10 +334,13 @@ label picture_inspect:
         pov "That's a picture of us when we'd just graduated."
 
 
+    hide picture with moveoutbottom
+
     python:
         picture_inspected = True
-    scene apartment normal
+    scene apartment normal with dissolve
     jump continue_looking
+
 
 
 
@@ -433,6 +446,7 @@ label assignments_inspect:
 
 
 
+
 label Listen_In:
     
     if bad_points >= 5:
@@ -458,7 +472,6 @@ label Listen_In:
         
         "Go back":
             jump Room_Scene_Roam
-
 
 
 

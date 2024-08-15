@@ -7,10 +7,15 @@ define aubrey_sprite = "aubrey"
 
 
 
+#image menu_background = Movie(play="images/animated main menu.webm")
+    
 
 label init_scene:
 
     
+    
+    scene black
+
     stop music
 
 
@@ -19,7 +24,7 @@ label init_scene:
         name = name.strip()
 
         if not name:
-            name = "Jon"
+            name = "Bwee"
 
 
 

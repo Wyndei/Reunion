@@ -72,7 +72,7 @@ label Door_Scene:
     scene door_bg normal with fade
 
 
-    show ravena happy at center
+    show ravena happy at center with dissolve
    
     
 
