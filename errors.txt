@@ -1,0 +1,22 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/init.rpy", line 22: iterable argument unpacking follows keyword argument unpacking
+    DynamicDisplayable(update_aubrey,*, "neutral")
+                                       ^
+
+File "game/init.rpy", line 23: iterable argument unpacking follows keyword argument unpacking
+    DynamicDisplayable(update_aubrey,*, "happy")
+                                       ^
+
+File "game/init.rpy", line 24: iterable argument unpacking follows keyword argument unpacking
+    DynamicDisplayable(update_aubrey,*,"nervous")
+                                       ^
+
+File "game/init.rpy", line 25: iterable argument unpacking follows keyword argument unpacking
+    DynamicDisplayable(update_aubrey,*,"sad")
+                                       ^
+
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Thu Aug 15 00:51:54 2024
