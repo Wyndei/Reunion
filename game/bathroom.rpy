@@ -11,7 +11,7 @@ label Bathroom_Transition:
     play music ["Reunion Party Theme (Muffled).ogg","Reunion Party Theme.ogg"] fadeout 0.1 fadein 0.1
 
     pause 0.25
-    play sound "door_close.ogg"
+    play sound "door_close_left.ogg"
 
     jump Bathroom_Scene
 

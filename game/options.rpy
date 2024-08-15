@@ -30,13 +30,17 @@ define config.version = "{size=20}1.0{/size}"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-Created by Team NAME GOES HERE
+Created by Team BWEE
 
 Director, Background art - Echo
 
 Character art, UI, Final CG - Budder28
 
 Writers - Echo, Emmett Kane
+
+Music - Emmett Kane
+
+SFX - Emmett Kane, Wyn
 
 Programming - Wyn
 """)

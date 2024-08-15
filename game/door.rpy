@@ -31,7 +31,7 @@ label Door_Scene:
     pov "Just... take a deep breath, okay? It'll be fine. It's always been fine."
 
 
-    show yokari annoyed at left with dissolve
+    show yokari neutral at left with dissolve
     show theo phone at center with dissolve
     show aubrey nervous at right with dissolve
     
@@ -68,6 +68,7 @@ label Door_Scene:
     
     pause 1.0
 
+    
     scene door_bg normal with fade
 
 

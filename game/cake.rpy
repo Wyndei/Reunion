@@ -94,6 +94,7 @@ label cake_ending_display:
     scene black with dissolve
 
 
+    stop music fadeout 3.0
     pause 3.0
 
     return

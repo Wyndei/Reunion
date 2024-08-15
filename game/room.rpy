@@ -69,7 +69,7 @@ label Room_Transition:
     play music ["Reunion Party Theme.ogg"] fadeout 0.1 fadein 0.1
 
     pause 0.25
-    play sound "door_close.ogg"
+    play sound "door_close_right.ogg"
 
 
     jump Room_Scene_Roam
@@ -515,7 +515,7 @@ label Ravena_Yokari:
     show ravena neutral
     yokari happy "I've been drowning in work at the florist. Just trying to keep busy since..."
   
-    yokari upset "hmm."
+    yokari sad "hmm."
 
     show yokari happy
     ravena tired "It's fine. We're all thinking about it"

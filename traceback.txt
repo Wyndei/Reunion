@@ -1,26 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/init.rpy", line 78, in script
-    python:
-  File "game/init.rpy", line 81, in <module>
-    aubrey_sprite = aubrey_necklace
-NameError: name 'aubrey_necklace' is not defined
+After initialization, but before game start.
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "game/screens.rpy", line 1185, in <module>
+    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+AttributeError: 'StoreModule' object has no attribute 'confirm_frame_borders'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/init.rpy", line 78, in script
-    python:
-  File "C:\Users\Nicholas\Downloads\renpy-8.2.3-sdk.7z(1)\renpy-8.2.3-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Nicholas\Downloads\renpy-8.2.3-sdk.7z(1)\renpy-8.2.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/init.rpy", line 81, in <module>
-    aubrey_sprite = aubrey_necklace
-NameError: name 'aubrey_necklace' is not defined
+  File "C:\Users\Nicholas\Downloads\renpy-8.2.3-sdk.7z(1)\renpy-8.2.3-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Nicholas\Downloads\renpy-8.2.3-sdk.7z(1)\renpy-8.2.3-sdk\renpy\main.py", line 637, in main
+    run(restart)
+  File "C:\Users\Nicholas\Downloads\renpy-8.2.3-sdk.7z(1)\renpy-8.2.3-sdk\renpy\main.py", line 75, in run
+    renpy.translation.init_translation()
+  File "C:\Users\Nicholas\Downloads\renpy-8.2.3-sdk.7z(1)\renpy-8.2.3-sdk\renpy\translation\__init__.py", line 664, in init_translation
+    renpy.store._init_language() # type: ignore
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "C:\Users\Nicholas\Downloads\renpy-8.2.3-sdk.7z(1)\renpy-8.2.3-sdk\renpy\translation\__init__.py", line 758, in change_language
+    new_change_language(tl, language)
+  File "C:\Users\Nicholas\Downloads\renpy-8.2.3-sdk.7z(1)\renpy-8.2.3-sdk\renpy\translation\__init__.py", line 710, in new_change_language
+    i.apply()
+  File "C:\Users\Nicholas\Downloads\renpy-8.2.3-sdk.7z(1)\renpy-8.2.3-sdk\renpy\ast.py", line 2787, in apply
+    value = renpy.python.py_eval(expr)
+  File "C:\Users\Nicholas\Downloads\renpy-8.2.3-sdk.7z(1)\renpy-8.2.3-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Nicholas\Downloads\renpy-8.2.3-sdk.7z(1)\renpy-8.2.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/screens.rpy", line 1185, in <module>
+    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+AttributeError: 'StoreModule' object has no attribute 'confirm_frame_borders'
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.3.24061702
 Reunion {size=20}1.0{/size}
-Thu Aug 15 01:11:23 2024
+Thu Aug 15 06:32:48 2024
