@@ -86,7 +86,7 @@ label Room_Scene_Roam:
         jump bad_ending_apartment
 
     
-    if ListenedToRavenaYokari and ListenedToAubreyTheo and ListenedToAubreyTheo and picture_inspected and not good_point >= 5:
+    if ListenedToRavenaYokari and ListenedToAubreyTheo and ListenedToAubreyTheo and picture_inspected and not good_points >= 5:
         jump bad_ending_apartment
 
 
